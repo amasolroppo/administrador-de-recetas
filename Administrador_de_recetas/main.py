@@ -2,7 +2,7 @@ from pathlib import Path
 from os import system
 from funciones import *
 
-
+#Inserta tu propia ruta
 ruta = Path(Path.home(), "Desktop", "PythonProject" ,"Python-alternativo", "Recetas")
 print(ruta)
 
@@ -16,9 +16,9 @@ while True:
     opcion_del_usuario = pedir_opcion()
 
     if opcion_del_usuario == 1:
+        limpir_pantalla()
         categoria = elegir_categoria(ruta)
         receta_a_leer = elegir_receta(categoria)
-        limpir_pantalla()
         leer_receta(receta_a_leer)
 
     elif opcion_del_usuario == 2:
