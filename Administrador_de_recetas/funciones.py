@@ -89,6 +89,10 @@ def elegir_receta(ruta_categoria):
     lista_receta.sort()
     lista_receta_user.sort()
 
+    if len(lista_receta) == 0:
+        print("Esta categoría no tiene recetas todavía.")
+        return None
+
     receta_valida = False
     receta_elegida = None
 

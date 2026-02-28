@@ -19,6 +19,8 @@ while True:
         limpir_pantalla()
         categoria = elegir_categoria(ruta)
         receta_a_leer = elegir_receta(categoria)
+        if receta_a_leer is None:
+            continue
         leer_receta(receta_a_leer)
 
     elif opcion_del_usuario == 2:
